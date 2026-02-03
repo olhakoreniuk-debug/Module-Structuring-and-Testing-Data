@@ -5,9 +5,13 @@
 // interpret the error message and figure out why an error is occurring
 
 function capitalise(str) {
-  let str = `${str[0].toUpperCase()}${str.slice(1)}`;
-  return str;
+  let va = `${str[0].toUpperCase()}${str.slice(1)}`;
+  return va;
 }
-
+let result = capitalise("hello");
+console.log(result);
 // =============> write your explanation here
+// it was SyntaxError: Identifier 'str' has already been declared. I have changed the name of the parameter from str to va to fix the error.
+
 // =============> write your new code here
+
